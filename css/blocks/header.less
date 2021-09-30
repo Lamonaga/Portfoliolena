@@ -1,0 +1,53 @@
+//main: ../style.less
+.header {
+  padding: 1.2rem 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__item {
+   display: flex;
+  @media (max-width: 1300px) {
+  //  margin-right: 150px;
+    
+  }
+  
+}
+.header__avatar {
+  height: 57px;
+  width: 57px;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 57px;
+  max-width: 200px;
+
+  margin-left: 10px;
+}
+
+.header__name {
+  max-width: 110px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: @black;
+}
+
+.header__prof {
+  font-size: 12px;
+  font-weight: 400;
+  max-width: 200px;
+  color: rgba(#2b2a2c, 70%);
+}

@@ -1,0 +1,64 @@
+// main: ../style.less
+.read {
+    margin-top: 50px;
+}
+.read__title {
+  font-size: 45px;
+  font-weight: 700;
+  color: @black;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.read__subtitle {
+    margin-bottom: 70px;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+.read__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 370px));
+    grid-gap: 30px;
+}
+
+.read__photo {
+    position: relative;
+    max-width: 370px;
+    overflow: hidden;
+}
+
+.read__data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: @white;
+    width: 77px;
+    height: 77px;
+    background-color: @black;
+    text-align: center;
+    padding: 15px 15px;
+    
+    
+}
+
+.read__title__item {
+    margin: 15px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: @black;
+    font-weight: 700;
+}
+
+.read__type {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.read__text {
+    margin-bottom: 35px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 2;
+}

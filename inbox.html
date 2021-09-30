@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <svg style="display: none">
+      <symbol id="facebook" viewBox="0 0 430.113 430.114">
+        <g>
+          <path
+            d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+                c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+                c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="twitter" viewBox="0 0 612 612">
+        <g>
+          <path
+            d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+                c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+                c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+                c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+                c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+                c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+                c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="linkedin" viewBox="0 0 430.117 430.118">
+        <g>
+          <path
+            d="M398.355,0H31.782C14.229,0,0.002,13.793,0.002,30.817v368.471
+                c0,17.025,14.232,30.83,31.78,30.83h366.573c17.549,0,31.76-13.814,31.76-30.83V30.817C430.115,13.798,415.904,0,398.355,0z
+                 M130.4,360.038H65.413V165.845H130.4V360.038z M97.913,139.315h-0.437c-21.793,0-35.92-14.904-35.92-33.563
+                c0-19.035,14.542-33.535,36.767-33.535c22.227,0,35.899,14.496,36.331,33.535C134.654,124.415,120.555,139.315,97.913,139.315z
+                 M364.659,360.038h-64.966V256.138c0-26.107-9.413-43.921-32.907-43.921c-17.973,0-28.642,12.018-33.327,23.621
+                c-1.736,4.144-2.166,9.94-2.166,15.728v108.468h-64.954c0,0,0.85-175.979,0-194.192h64.964v27.531
+                c8.624-13.229,24.035-32.1,58.534-32.1c42.76,0,74.822,27.739,74.822,87.414V360.038z M230.883,193.99
+                c0.111-0.182,0.266-0.401,0.42-0.614v0.614H230.883z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="instagram" viewBox="0 0 169.063 169.063">
+        <g>
+          <path
+            d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+            c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+            c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+            c17.455,0,31.656,14.201,31.656,31.655V122.407z"
+          />
+          <path
+            d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+            C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+            c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"
+          />
+          <path
+            d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+            c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+            C135.661,29.421,132.821,28.251,129.921,28.251z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="vk" viewBox="0 0 455.731 455.731">
+        <g>
+          <path
+            style="fill: #ffffff"
+            d="M118.06,138.69c10.922,26.972,24.764,52.402,42.995,75.231c2.418,3.038,5.466,5.739,8.677,7.938
+            c4.69,3.221,9.115,2.089,11.022-3.276c2.017-5.63,3.868-17.04,3.978-22.952c0.301-15.448-0.045-25.572-0.875-41.001
+            c-0.538-9.882-4.051-18.559-18.587-21.178c-4.489-0.812-4.906-4.507-2.022-8.193c6.004-7.674,14.368-8.897,23.438-9.381
+            c14.7-0.794,29.454-0.146,44.172,0c5.995,0.055,12.026,0.538,17.93,1.825c7.701,1.679,11.825,7.081,13.094,14.599
+            c0.657,3.878,0.995,7.865,0.903,11.789c-0.383,16.862-1.195,33.715-1.387,50.568c-0.082,6.615,0.401,13.395,1.816,19.837
+            c1.98,8.978,8.093,11.232,14.344,4.745c7.938-8.239,14.937-17.51,21.506-26.926c11.935-17.127,20.849-35.923,28.523-55.303
+            c3.969-10,7.008-12.172,17.765-12.199c20.22-0.046,40.44-0.064,60.66,0c3.586,0.018,7.336,0.356,10.721,1.433
+            c5.493,1.752,7.674,6.232,6.387,11.917c-3.002,13.322-10.201,24.645-17.911,35.531c-12.373,17.464-25.339,34.509-38.003,51.772
+            c-1.615,2.199-3.038,4.544-4.362,6.925c-4.736,8.559-4.407,13.358,2.5,20.484c10.995,11.342,22.766,21.953,33.414,33.605
+            c7.738,8.477,14.9,17.674,21.032,27.355c7.756,12.245,2.965,23.778-11.524,25.831c-9.115,1.287-53.641,0.01-55.942,0
+            c-11.971-0.054-22.464-4.206-30.914-12.336c-9.398-9.051-17.939-18.979-26.963-28.423c-2.719-2.847-5.621-5.575-8.75-7.957
+            c-7.382-5.63-14.627-4.38-18.076,4.289c-2.947,7.446-5.493,26.999-5.612,28.669c-0.62,8.732-6.177,14.298-15.959,14.836
+            c-28.24,1.533-55.605-1.615-81.098-15.274c-21.607-11.57-38.861-27.93-53.807-47.009c-23.742-30.304-42.495-63.615-59.616-97.904
+            c-0.875-1.753-18.216-38.653-18.682-40.396c-1.549-5.836-0.104-11.411,4.827-13.33c3.074-1.196,60.248-0.004,61.199,0.047
+            C107.996,125.372,114.217,129.221,118.06,138.69z"
+          />
+        </g>
+      </symbol>
+    </svg>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__item">
+            <div class="header__avatar">
+              <img src="http://placehold.it/57/333" alt="" />
+            </div>
+            <div class="header__text">
+              <div class="header__name">Elena Borisova</div>
+              <div class="header__prof">Teacher English language</div>
+            </div>
+          </div>
+          <div class="header__item">
+            <nav class="nav">
+              <a class="nav__link" href="#">WORK</a>
+              <a class="nav__link" href="#">ABOUT ME</a>
+              <a class="nav__link" href="#">BLOG</a>
+              <a class="nav__link" href="#">CONTACT</a>
+              <a class="nav__link nav__link--btn" href="#">HIRE ME</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__item">
+            <div class="intro__photo">
+              <img class="lena__img" src="./img/lena.png" alt="" />
+            </div>
+            <div class="intro__title">Hello, I’m</div>
+            <div class="intro__name">Elena Borisova</div>
+            <div class="intro__prof">Teacher English language</div>
+            <div class="social">
+              <a
+                class="social__item social__item--facebook"
+                href="#"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+              <a
+                class="social__item social__item--twitter"
+                href="#"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#twitter"></use>
+                </svg>
+              </a>
+              <a
+                class="social__item social__item--linkedin"
+                href="#"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#linkedin"></use>
+                </svg>
+              </a>
+              <a
+                class="social__item social__item--instagram"
+                href="https://www.instagram.com/petrova.helen/?hl=ru"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+
+              <a
+                class="social__item social__item--instagram"
+                href="https://vk.com/id50943702"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#vk"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="intro__btn">
+            <a class="btn__intro" href="#">HIRE ME</a>
+            <a class="btn__intro" href="#">SEE MY RESUME </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="works">
+      <div class="container">
+        <div class="works__header">
+          <nav class="works__nav">
+            <a class="works__nav__link" href="#">All </a>
+            <a class="works__nav__link" href="#">App</a>
+            <a class="works__nav__link" href="#">Website</a>
+            <a class="works__nav__link" href="#">Interaction</a>
+          </nav>
+        </div>
+        <div class="works__inner">
+          <div class="works__item">
+            <img
+              class="works__img"
+              width="370"
+              height="300"
+              src="./img/lena.jpg"
+              alt=""
+            />
+            <div class="project__type">CATEGORY</div>
+            <div class="project__info">
+              <div class="project__title">PROJECT TITLE</div>
+              <div class="project__data">2018</div>
+            </div>
+          </div>
+
+          <div class="works__item">
+            <img
+              class="works__img"
+              width="370"
+              height="300"
+              src="./img/lena.jpg"
+              alt=""
+            />
+            <div class="project__type">CATEGORY</div>
+            <div class="project__info">
+              <div class="project__title">PROJECT TITLE</div>
+              <div class="project__data">2018</div>
+            </div>
+          </div>
+
+          <div class="works__item">
+            <img
+              class="works__img"
+              width="370"
+              height="300"
+              src="./img/lena.jpg"
+              alt=""
+            />
+            <div class="project__type">CATEGORY</div>
+            <div class="project__info">
+              <div class="project__title">PROJECT TITLE</div>
+              <div class="project__data">2018</div>
+            </div>
+          </div>
+
+          <div class="works__item">
+            <img
+              class="works__img"
+              width="370"
+              height="300"
+              src="./img/lena.jpg"
+              alt=""
+            />
+            <div class="project__type">CATEGORY</div>
+            <div class="project__info">
+              <div class="project__title">PROJECT TITLE</div>
+              <div class="project__data">2018</div>
+            </div>
+          </div>
+
+          <div class="works__item">
+            <img
+              class="works__img"
+              width="370"
+              height="300"
+              src="./img/lena.jpg"
+              alt=""
+            />
+            <div class="project__type">CATEGORY</div>
+            <div class="project__info">
+              <div class="project__title">PROJECT TITLE</div>
+              <div class="project__data">2018</div>
+            </div>
+          </div>
+
+          <div class="works__item">
+            <img
+              class="works__img"
+              width="370"
+              height="300"
+              src="./img/lena.jpg"
+              alt=""
+            />
+            <div class="project__type">CATEGORY</div>
+            <div class="project__info">
+              <div class="project__title">PROJECT TITLE</div>
+              <div class="project__data">2018</div>
+            </div>
+          </div>
+
+          <div class="works__item">
+            <img
+              class="works__img"
+              width="370"
+              height="300"
+              src="./img/lena.jpg"
+              alt=""
+            />
+            <div class="project__type">CATEGORY</div>
+            <div class="project__info">
+              <div class="project__title">PROJECT TITLE</div>
+              <div class="project__data">2018</div>
+            </div>
+          </div>
+
+          <div class="works__item">
+            <img
+              class="works__img"
+              width="370"
+              height="300"
+              src="./img/lena.jpg"
+              alt=""
+            />
+            <div class="project__type">CATEGORY</div>
+            <div class="project__info">
+              <div class="project__title">PROJECT TITLE</div>
+              <div class="project__data">2018</div>
+            </div>
+          </div>
+
+          <div class="works__item">
+            <img
+              class="works__img"
+              width="370"
+              height="300"
+              src="./img/lena.jpg"
+              alt=""
+            />
+            <div class="project__type">CATEGORY</div>
+            <div class="project__info">
+              <div class="project__title">PROJECT TITLE</div>
+              <div class="project__data">2018</div>
+            </div>
+          </div>
+        </div>
+        <div class="works__btn">
+          <a class="works__link" href="#">LOAD MORE WORK</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutMe">
+      <div class="container">
+        <div class="aboutMe__inner">
+          <div class="aboutMe__photo">
+            <img class="aboutMe__img" src="./img/lena2.png" alt="" />
+          </div>
+          <div class="aboutMe__content">
+            <div class="aboutMe__title">ABOUT ME</div>
+            <div class="aboutMe__subtitle">WHO AM I</div>
+            <div class="aboutMe__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              pellentesque eu enim eget luctus. Sed augue felis, facilisis et
+              elementum vitae, aliquam sit amet ante. Sed iaculis eros sem,
+              elementum consequat est consequat eu. Quisque aliquet a ipsum nec
+              tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum
+              quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia Curae; Donec at
+              mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet
+              aliquet dui, at varius est. Phasellus porttitor finibus neque vel
+              vehicula. Duis in nulla egestas, dignissim elit at, imperdiet
+              eros. Integer tristique posuere purus. Suspendisse placerat, quam
+              vitae ullamcorper sollicitudin, dui ligula molestie massa, sit
+              amet laoreet nibh ex vitae dui. Aenean laoreet pellentesque lacus,
+              eget varius massa mattis quis. Nunc ultrices urna eu nunc lobortis
+              pulvinar. Duis viverra, quam non imperdiet scelerisque, urna nunc
+              consequat velit, in mollis erat nibh in libero.
+            </div>
+            <div class="intro__btn">
+              <a class="btn__intro" href="#">HIRE ME</a>
+              <a class="btn__intro" href="#">SEE MY RESUME </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <div class="container">
+        <div class="reviews__inner">
+          <div class="reviews__text">
+            С Еленой я начал заниматься 3 года назад, имея нулевой уровень
+            английского языка. Я даже не знал алфавита! Но с каждым днем я
+            познавал все больше и больше, двигаясь ступенчато. Мои знания и
+            навыки владения языком увеличивались, благодаря прекрасно
+            выверенному методическому подходу, индивидуально подобранному под
+            каждого ученика.
+          </div>
+          <div class="reviews__avatar">
+            <div class="reviews__photo">
+              <img class="reviews__img" src="./img/ivan.JPG" alt="" />
+            </div>
+            <div class="reviews__name">Ivan Borisov</div>
+            <div class="reviews__prof">Maths teacher</div>
+            <div class="reviews__info"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="read">
+      <div class="container">
+        <div class="read__title">READ ME</div>
+        <div class="read__subtitle">Sometimes i write something smart</div>
+        <div class="read__inner">
+          <div class="read__item">
+            <div class="read__photo">
+              <img class="read__img" src="./img/read__img.png" alt="" />
+              <div class="read__data">10 june</div>
+            </div>
+            <div class="read__content">
+              <div class="read__title__item">TEN THE BEST APP IN 2017</div>
+              <div class="read__type">CATEGORY</div>
+              <div class="read__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas pellentesque eu enim eget luctus. Sed augue felis,
+                facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis
+                eros sem, elementum consequat.
+              </div>
+              <div class="intro__btn">
+                <a class="btn__intro btn__intro--read" href="#">Read more </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="read__item">
+            <div class="read__photo">
+              <img class="read__img" src="./img/read__img.png" alt="" />
+              <div class="read__data">15 june</div>
+            </div>
+            <div class="read__content">
+              <div class="read__title__item">WEBSITE INSPIRATION</div>
+              <div class="read__type">CATEGORY</div>
+              <div class="read__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas pellentesque eu enim eget luctus. Sed augue felis,
+                facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis
+                eros sem, elementum consequat.
+              </div>
+              <div class="intro__btn">
+                <a class="btn__intro btn__intro--read" href="#">Read more </a>
+              </div>
+            </div>
+          </div>
+          <div class="read__item">
+            <div class="read__photo">
+              <img class="read__img" src="./img/read__img.png" alt="" />
+              <div class="read__data">20 june</div>
+            </div>
+            <div class="read__content">
+              <div class="read__title__item">CHANGES IN SOCIAL MEDIA</div>
+              <div class="read__type">CATEGORY</div>
+              <div class="read__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas pellentesque eu enim eget luctus. Sed augue felis,
+                facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis
+                eros sem, elementum consequat.
+              </div>
+              <div class="intro__btn">
+                <a class="btn__intro btn__intro--read" href="#">Read more </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__text">© 2018 UI43 - Free Templates</div>
+          <nav class="nav">
+            <a class="nav__link nav__link--footer" href="#">Work</a>
+            <a class="nav__link nav__link--footer" href="#">About me</a>
+            <a class="nav__link nav__link--footer" href="#">Blog</a>
+            <a class="nav__link nav__link--footer" href="#">Contact</a>
+            <a
+              class="
+                nav__link nav__link--footer nav__link--btn nav__link--footerbtn
+              "
+              href="#"
+              >Hire me</a
+            >
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

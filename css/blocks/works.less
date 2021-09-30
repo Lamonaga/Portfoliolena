@@ -1,0 +1,68 @@
+// main: ../style.less
+.works {
+  margin: 40px 0 140px;
+}
+
+.works__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 370px));
+  grid-gap: 30px;
+}
+.works__header {
+}
+.works__item {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 0px @black;
+}
+
+.works__img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.project__type {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+
+}
+
+.project__info {
+  display: flex;
+  justify-content: space-between;
+  margin:0 15px 30px
+  
+}
+
+.project__title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.project__data {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.works__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 40px;
+
+    
+
+}
+
+.works__link {
+    padding: 0.66rem 2rem;
+    border-radius: 20px;
+    border: 3px solid @black;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @black;
+    text-decoration: none;
+}
