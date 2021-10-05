@@ -1,0 +1,100 @@
+// main: ../style.less
+.modal__feedback {
+    display: flex;
+    background-color: rgba(22, 22, 29, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+
+}
+
+.feedback__inner {
+    display: flex;
+    margin: auto;
+    max-width: 900px;
+    max-height: 676px;
+    width: 100%;
+    background-color: @white;
+}
+
+.feedback__content {
+    max-width: 430px;
+    width: 100%;
+    padding: 35px 40px;
+}
+.feedback__title {
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.feedback__subtitle {
+    font-size: 16px;
+
+}
+.feedback__contact {
+    font-size: 14px;
+    font-weight: 300;
+    color: @gray;
+}
+ul {
+    padding-inline-start: 20px;
+}
+.feedback__inputmail {
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: @black;
+}
+.inputmail {
+    width: 100%;
+    margin: 10px 0;
+    padding: 13px;
+    outline: none;
+    display: block;
+    border-radius: 30px;
+    border: 1px solid @gray;
+    color: @gray;
+
+}
+.feedback__inputtext {
+
+    font-size: 12px;
+    font-weight: 700;
+    color: @black;
+}
+
+
+.Requesttext {
+    width: 100%;
+    margin: 10px 0;
+    padding: 13px;
+    outline: none;
+    resize: none;
+    border-radius: 30px;
+    border: 1px solid @gray;
+    color: @gray;
+}
+.feedback__photo {
+    position: relative;
+    overflow: hidden;
+    max-width: 470px;
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+.modal3__btn__bottom {
+    justify-content: right; 
+}
+
+.feed__img {
+    position: absolute;
+    top: 0;
+    left: -50%;
+}

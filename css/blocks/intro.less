@@ -22,12 +22,19 @@
   font-size: 32px;
   font-weight: 300;
   margin-bottom: 10px;
+  
+  @media (max-width:450px) {
+    font-size: 25px;
+  }
 }
 
 .intro__name {
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 10px;
+  @media (max-width:450px) {
+    font-size: 35px;
+  }
 }
 
 .intro__prof {
@@ -64,6 +71,11 @@
     font-weight: 400;
     border: 2px solid @black;
   }
+
+  @media (max-width:450px) {
+    padding: 7.6px 25px;
+    font-size: 13px;
+  }
 }
 
 .intro__photo {
@@ -71,8 +83,14 @@
   top: -100px;
   right: 150px;
   z-index: 1;
-}
+
+  
 
 .lena__img {
     height: 496px;
+
+    @media (max-width: 950px) {
+      display: none;
+    }
+}
 }
