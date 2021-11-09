@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="./main.js"></script>
 
     <svg style="display: none">
       <symbol id="facebook" viewBox="0 0 430.113 430.114">
@@ -110,10 +111,10 @@
           </div>
           <div class="header__item">
             <nav class="nav">
-              <a class="nav__link" href="#">WORK</a>
-              <a class="nav__link" href="#">ABOUT ME</a>
-              <a class="nav__link" href="#">BLOG</a>
-              <a class="nav__link" href="#">CONTACT</a>
+              <a class="nav__link" id="works" href="#">WORK</a>
+              <a class="nav__link" id="aboutMe" href="#">ABOUT ME</a>
+              <a class="nav__link" id="blog" href="#">BLOG</a>
+              <a class="nav__link" id="contact" href="#">CONTACT</a>
               <a class="nav__link nav__link--btn" href="#">HIRE ME</a>
             </nav>
             <div class="burger">
@@ -185,7 +186,7 @@
           </div>
           <div class="intro__btn">
             <a class="btn__intro" href="#">HIRE ME</a>
-            <a class="btn__intro" href="#">SEE MY RESUME </a>
+            <a class="btn__intro resume" href="#">SEE MY RESUME </a>
           </div>
         </div>
       </div>
@@ -201,142 +202,7 @@
             <a class="works__nav__link" href="#">Interaction</a>
           </nav>
         </div>
-        <div class="works__inner">
-          <div class="works__item">
-            <img
-              class="works__img"
-              width="370"
-              height="300"
-              src="./img/lena.jpg"
-              alt=""
-            />
-            <div class="project__type">CATEGORY</div>
-            <div class="project__info">
-              <div class="project__title">PROJECT TITLE</div>
-              <div class="project__data">2018</div>
-            </div>
-          </div>
-
-          <div class="works__item">
-            <img
-              class="works__img"
-              width="370"
-              height="300"
-              src="./img/lena.jpg"
-              alt=""
-            />
-            <div class="project__type">CATEGORY</div>
-            <div class="project__info">
-              <div class="project__title">PROJECT TITLE</div>
-              <div class="project__data">2018</div>
-            </div>
-          </div>
-
-          <div class="works__item">
-            <img
-              class="works__img"
-              width="370"
-              height="300"
-              src="./img/lena.jpg"
-              alt=""
-            />
-            <div class="project__type">CATEGORY</div>
-            <div class="project__info">
-              <div class="project__title">PROJECT TITLE</div>
-              <div class="project__data">2018</div>
-            </div>
-          </div>
-
-          <div class="works__item">
-            <img
-              class="works__img"
-              width="370"
-              height="300"
-              src="./img/lena.jpg"
-              alt=""
-            />
-            <div class="project__type">CATEGORY</div>
-            <div class="project__info">
-              <div class="project__title">PROJECT TITLE</div>
-              <div class="project__data">2018</div>
-            </div>
-          </div>
-
-          <div class="works__item">
-            <img
-              class="works__img"
-              width="370"
-              height="300"
-              src="./img/lena.jpg"
-              alt=""
-            />
-            <div class="project__type">CATEGORY</div>
-            <div class="project__info">
-              <div class="project__title">PROJECT TITLE</div>
-              <div class="project__data">2018</div>
-            </div>
-          </div>
-
-          <div class="works__item">
-            <img
-              class="works__img"
-              width="370"
-              height="300"
-              src="./img/lena.jpg"
-              alt=""
-            />
-            <div class="project__type">CATEGORY</div>
-            <div class="project__info">
-              <div class="project__title">PROJECT TITLE</div>
-              <div class="project__data">2018</div>
-            </div>
-          </div>
-
-          <div class="works__item">
-            <img
-              class="works__img"
-              width="370"
-              height="300"
-              src="./img/lena.jpg"
-              alt=""
-            />
-            <div class="project__type">CATEGORY</div>
-            <div class="project__info">
-              <div class="project__title">PROJECT TITLE</div>
-              <div class="project__data">2018</div>
-            </div>
-          </div>
-
-          <div class="works__item">
-            <img
-              class="works__img"
-              width="370"
-              height="300"
-              src="./img/lena.jpg"
-              alt=""
-            />
-            <div class="project__type">CATEGORY</div>
-            <div class="project__info">
-              <div class="project__title">PROJECT TITLE</div>
-              <div class="project__data">2018</div>
-            </div>
-          </div>
-
-          <div class="works__item">
-            <img
-              class="works__img"
-              width="370"
-              height="300"
-              src="./img/lena.jpg"
-              alt=""
-            />
-            <div class="project__type">CATEGORY</div>
-            <div class="project__info">
-              <div class="project__title">PROJECT TITLE</div>
-              <div class="project__data">2018</div>
-            </div>
-          </div>
-        </div>
+        <div class="works__inner"></div>
         <div class="works__btn">
           <a class="works__link" href="#">LOAD MORE WORK</a>
         </div>
@@ -372,7 +238,7 @@
             </div>
             <div class="intro__btn">
               <a class="btn__intro" href="#">HIRE ME</a>
-              <a class="btn__intro" href="#">SEE MY RESUME </a>
+              <a class="btn__intro resume" href="#">SEE MY RESUME </a>
             </div>
           </div>
         </div>
@@ -490,28 +356,28 @@
     </footer>
 
     <!-- Modal -->
-
-    <div class="model" style="display: none">
+    <!-- 
+    <div class="modal" style="display: none;">
       <div class="modal__dialog">
-        <div class="model__remove">
+        <div class="modal__remove">
           <button>
             <img class="remove__img" src="./img/remove-button.png" alt="" />
           </button>
         </div>
-        <div class="model__photo">
-          <img class="model__img" src="./img/model_img.JPG" alt="" />
+        <div class="modal__photo">
+          <img class="modal__img" src="./img/modal_img.JPG" alt="" />
         </div>
-        <div class="model__content">
-          <div class="model__title">PROJECT TITLE</div>
-          <div class="model__type">
-            <div class="model__category">CATEGORY</div>
-            <div class="model__ears">2018</div>
+        <div class="modal__content">
+          <div class="modal__title">PROJECT TITLE</div>
+          <div class="modal__type">
+            <div class="modal__category">CATEGORY</div>
+            <div class="modal__ears">2018</div>
           </div>
-          <div class="model__client">
-            <div class="model__client__title">Client:</div>
-            <div class="model__client__name">Creative Agency</div>
+          <div class="modal__client">
+            <div class="modal__client__title">Client:</div>
+            <div class="modal__client__name">Creative Agency</div>
           </div>
-          <div class="model__text">
+          <div class="modal__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
             pellentesque eu enim eget luctus. Sed augue felis, facilisis et
             elementum vitae, aliquam sit amet ante. Sed iaculis eros sem,
@@ -529,7 +395,7 @@
             pulvinar. Duis viverra, quam non imperdiet scelerisque, urna nunc
             consequat velit, in mollis erat nibh in libero.
           </div>
-          <div class="model__btn">
+          <div class="modal__btn">
             <button type="button" class="modal__btn--next" href="">
               <img class="icon__arrowleft" src="./img/left-arrow.png" alt="" />
               PREVIOUS
@@ -544,10 +410,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- MOdal2 -->
-    <div class="model" style="display: none">
+    <div class="modal" data-modal="resume" style="display: none">
       <div class="modal__dialog2">
+        <div class="modal__remove" data-modal="resume">
+          <button>
+            <img class="remove__img" src="./img/remove-button.png" alt="" />
+          </button>
+        </div>
         <div class="modal2__content">
           <div class="modal2__title">RESUME</div>
           <div class="intro__btn modal2__btn">
@@ -699,7 +570,7 @@
     </div>
 
     <!-- modal3 -->
-    <div class="modal__feedback" style="display: none;">
+    <div class="modal__feedback" style="display: none">
       <div class="feedback__inner">
         <div class="feedback__content">
           <div class="feedback__title">LET'S TALK!</div>
@@ -712,17 +583,21 @@
           </div>
           <div class="feedback__inputmail">
             Adress e-mail
-            <input class="inputmail" value="Adress e-mail" type="mail">
+            <input class="inputmail" value="Adress e-mail" type="mail" />
           </div>
           <div class="feedback__inputtext">
             <p>Request</p>
-           <textarea name="Request" class="Requesttext" cols="30" rows="10">Type your request...</textarea>
+            <textarea name="Request" class="Requesttext" cols="30" rows="10">
+Type your request...</textarea
+            >
           </div>
           <div class="intro__btn modal3__btn__bottom">
             <a class="btn__intro" href="#">SEND</a>
           </div>
         </div>
-        <div class="feedback__photo"><img class="feed__img" src="./img/model_img.JPG" alt="" /></div>
+        <div class="feedback__photo">
+          <img class="feed__img" src="./img/modal_img.JPG" alt="" />
+        </div>
       </div>
     </div>
   </body>
